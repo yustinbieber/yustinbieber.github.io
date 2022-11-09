@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iwnl Antivirus</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,500;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca-de">Acerca de</a>
+            <a href="#producto">Producto</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <section id="inicio" class="textos-header"> 
+            <h1>Iwnl Antivirus</h1>
+            <h2>Tu seguridad es lo primero</h2>
+        </section>
+    </header>
+    <main>
+        <section id="acerca-de" class="contenedor sobre-nosotros">
+            <h2 class="titulo">Conócenos</h2>
+            <div class="contenedor-sobre-nosotros"> 
+                <img src="img/Ilustracion1-01.svg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Quienes somos?</h3>
+                    <p>Iwnl es un antivirus que está dispuesta a mantener la Integridad, Disponibilidad, Privacidad, Control y Autenticidad de la información.</p>
+                    <h3><span>2</span>Crecimiento</h3>
+                    <p>Iwnl es un equipo de profesionales dedicados a la seguridad para usuarios. Los usuarios deben tener disponibles todos los componentes del sistema cuando así lo deseen.</p>
+                    <h3><span>3</span>Nuestra Cultura</h3>
+                    <p>No somos comediantes, pero nuestro equipo nunca deja de buscar estrategias de seguridad que hagan tu privacidad mas segura. Siempre entregando resultados que al final del día dibujarán una sonrisa de satisfacción en tu rostro.</p>
+                </div>
+            </div>
+        </section>
+        <section class="clients contenedor">
+            <h2 class="titulo">Qué Dicen Nuestros Clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/face1.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Valentin Escobar</h4>
+                        <p>"Tuve la suerte de encontrarme con mis amigos de iwnl quienes son como una familia para mi y aparte de eso pusieron en alto mi seguridad de una forma fenomenal."</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face2.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Nazareno vergara</h4>
+                        <p>"Desde el momento que contactamos a Iwnl nos atendieron al instante y se involucraron en la solución del problema, lo que más me impresiono fue su disponibilidad y empeño en ayudarnos a resolver el problema."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="producto" class="service">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestro Producto</h2>
+                <div class="servicio">
+                    <div class="servicioo">
+                        <img src="img/servicios-06.svg" alt="">
+                        <h3>Descarga el mejor antivirus gratis</h3>
+                        <a href="#" class="myButton">Descargar gratis</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contacto" class="footer"></section>
+    <footer>
+        <h2 class="titulo">Contacto</h2>
+        <form action="https://formspree.io/f/xbjbzogq"
+              method="POST">
+    
+        <label for="fullname">Nombre completo</label>
+        <input class="inputfield" type="text" name="name" class="name">
+
+        <label for="email">Correo electronico</label>
+        <input class="inputfield" type="email" name="email">
+  
+        <label for="phonenumber">Numero de telefono</label>
+        <input class="inputfield" type="text" name="phonenumber">
+                                                            
+        <label for="message">Mensaje</label>
+        <input class="inputfield" type="text" name="message">                                                         
+                                                        
+                                                          
+        <input class="button" type="submit" value="Send">
+
+        </form>
+        <h2 class="titulo-final">&copy;iwnl | 5to 1ra</h2>
+    </footer>
+</section>
+<button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+      btn_scrolltop.addEventListener('click', () => {
+        window.scrollTo(0, 0)
+      })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+</body>
+</html>
