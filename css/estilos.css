@@ -377,3 +377,7 @@ label {
   .btn-scrolltop-on {
     transform: translateY(0);
   }
+
+.ppp{
+    text-align: center;
+}
